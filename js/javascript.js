@@ -37,7 +37,7 @@ render();
 
 let nombre3 = "Gabriel Serrano"
 let texto = "me gusta programar"
-let saludo = `<h3>Hola, soy: ${nombre3} y ${texto}</h3>`
+let saludo = `<h3>Hola, soy: ${nombre3git} y ${texto}</h3>`
 let contenedor = document.getElementById("root")
 contenedor.innerHTML+=saludo
 
