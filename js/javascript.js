@@ -34,3 +34,15 @@ btn-primary'>Go somewhere</a>
         );
 }
 render();
+
+let nombre2 = "Gabriel Serrano"
+let texto = "me gusta programar"
+let saludo = `<h3>Hola, soy: ${nombre2} y ${texto}</h3>`
+let contenedor = document.getElementById("root")
+contenedor.innerHTML+=saludo
+
+function nombreCompleto (nombre="",apellido=""){
+    return `${nombre}${apellido}`
+}
+console.log(nombreCompleto("Gabriel ","Serrano"))
+
