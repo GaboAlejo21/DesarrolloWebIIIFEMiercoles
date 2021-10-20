@@ -11,10 +11,14 @@ const cargarListado=()=>{
         console.log(pokemons)
         pokemones=pokemons
         pokemons.forEach((p)=> {
-            miDiv.innerHTML+="<button class='btn btn-primary'> "+p.name+"</button>";
-        //    `<button class="btn btn-primary"> ${p.name} </button>`
-
+             miDiv.innerHTML+=`
+            <button class='btn btn-primary' onclick="crearImagen('${p.url}')"> ${p.name}</button>`;
+        //    ``
         });
     })
 }
 cargarListado()
+
+const crearImagen=(url)=>{
+    let contenedor = document.getElementById("contenedor");
+}
